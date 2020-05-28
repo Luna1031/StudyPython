@@ -7,7 +7,7 @@ with picamera.PiCamera() as camera:
     camera.exposure_compensation = 2
     camera.exposure_mode = 'auto'
     camera.meter_mode = 'matrix'
-    camera.image_effect = 'sketch'
+    camera.image_effect = 'none'
 
     time.sleep(10)
     camera.exif_tags['IFD0.Artist'] = 'Lee'
